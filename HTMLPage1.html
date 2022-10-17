@@ -1,0 +1,40 @@
+﻿
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>This is my simple web page</title>
+</head>
+    <script type="text/javascript">
+        // <![CDATA[
+        function btnShow_onclick() {
+            alert(window.txtUserMessage.value);
+        }
+        // ]]>
+    </script>
+<body>
+   <!-- Prompt for user input -->
+    <h1>Simple HTML Page</h1>
+    <p>
+        <br />
+        <i>Please enter a message
+        </i>
+    </p>
+    <!-- Build a form to get user info -->
+    <form id="default page"
+        action="http://localhost/Cars/MyAspNetPage.aspx" method="GET">
+        <input id="btnPostBack" type="submit" value="Post to Server!" />
+        <p>
+            Your Message:<p>
+        <p>
+            <input id="btnReset" type="reset" value="Reset" />
+            <input id="btnShow" type="button" value="Show!"
+            onclick="return btnShow_onclick()" />
+        </p>
+    </form>
+
+    <p>
+    </p>
+</body>
+</html>
